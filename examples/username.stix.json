@@ -1,0 +1,446 @@
+{
+  "type": "bundle",
+  "id": "bundle--1ab8354e-e9ba-50cb-9a79-35a91b2c2a98",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--77e49a6c-4ffb-59a5-8c03-e842c2ae25bc",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "name": "reconweave",
+      "identity_class": "system"
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "account_login": "someuser",
+      "x_reconweave_sources": [
+        "leaks",
+        "seed",
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 1.0
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--f38fa282-a80f-5419-b96b-50fea9fc62da",
+      "name": "leak:combolist-forum/1395e2a9",
+      "identity_class": "organization",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "type": "email-addr",
+      "spec_version": "2.1",
+      "id": "email-addr--c5a6c970-25e2-5132-b45b-1ab4190608a2",
+      "value": "someuser@gmail.com",
+      "x_reconweave_sources": [
+        "permutation"
+      ],
+      "x_reconweave_confidence": 0.4
+    },
+    {
+      "type": "email-addr",
+      "spec_version": "2.1",
+      "id": "email-addr--1f3f5e84-f4a6-5c19-a2a8-52e88dd73c88",
+      "value": "someuser@outlook.com",
+      "x_reconweave_sources": [
+        "permutation"
+      ],
+      "x_reconweave_confidence": 0.4
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--e67aad71-b836-5bf6-989a-e1460b4f081d",
+      "account_login": "mastodon:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.584
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--6e23e1ba-14c6-5d60-bed4-727004dc6c85",
+      "account_login": "instagram:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.466
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--95e7c768-1b7c-5351-9b19-c3fe660a2a48",
+      "account_login": "tiktok:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.689
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--2db15630-e16b-5256-a2cc-f26d5d17edad",
+      "account_login": "reddit:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.532
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--b05f3b60-40e4-5fbc-b54c-75b4829039cf",
+      "account_login": "hackernews:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.528
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--8dd62b3c-55ce-550a-8548-612fde9cd790",
+      "account_login": "behance:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.476
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--dd7fabd3-d79c-5ad6-8fb6-f997893d8dd2",
+      "account_login": "dribbble:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.456
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--8547ff64-07af-5e0e-939b-1a10cbd8ad1d",
+      "account_login": "deviantart:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.588
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--61aaf86e-1665-5ae9-b5ef-d8a773735a86",
+      "account_login": "substack:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.717
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--a9895e6e-971c-52f4-911a-bf207fd976cf",
+      "account_login": "wordpress:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.537
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--ed6610d4-ac05-5f5b-b50f-e7110567c49b",
+      "account_login": "youtube:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.579
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--439fca55-efd1-565a-889f-02867b93d62a",
+      "account_login": "vimeo:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.741
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--2ae6ccc5-2e8c-573e-a6c6-cfda65eda426",
+      "account_login": "soundcloud:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.611
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--5d07a5fe-a046-566a-a711-21bbec5c32b9",
+      "account_login": "bandcamp:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.681
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--870525f4-5bce-5a5a-99d9-be54594e0f1b",
+      "account_login": "keybase:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.742
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--b07c38a5-2a1c-514c-bd07-390ab70230ab",
+      "account_login": "venmo:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.67
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--5b35b8ab-7546-5a5f-89f1-21ecefc3170d",
+      "account_login": "gravatar:someuser",
+      "x_reconweave_sources": [
+        "username_enum"
+      ],
+      "x_reconweave_confidence": 0.663
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--695d640f-80c7-53b8-9815-05a7c77a959e",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "related-to",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "identity--f38fa282-a80f-5419-b96b-50fea9fc62da",
+      "confidence": 50
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f530ca2d-ddfb-5620-8679-9f93a5b14f2d",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--e67aad71-b836-5bf6-989a-e1460b4f081d",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--0098dea8-6b96-56f1-a72a-dad35af695dd",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--6e23e1ba-14c6-5d60-bed4-727004dc6c85",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2e89d59d-7e0c-5e80-b438-3394a1bcf29a",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--95e7c768-1b7c-5351-9b19-c3fe660a2a48",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--305e9253-1837-5544-ae98-ec7f8471f3dd",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--2db15630-e16b-5256-a2cc-f26d5d17edad",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4a1a7d0b-58c4-5c8a-97ff-cac2c46e9363",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--b05f3b60-40e4-5fbc-b54c-75b4829039cf",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3f0224b9-e5b6-5448-a0c2-2dac7a708516",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--8dd62b3c-55ce-550a-8548-612fde9cd790",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--9e05bf72-5a7a-567f-8c98-348c4b8cd84a",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--dd7fabd3-d79c-5ad6-8fb6-f997893d8dd2",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2fc3f8f3-5951-501c-b492-eae10f97bf1d",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--8547ff64-07af-5e0e-939b-1a10cbd8ad1d",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d24a6c7a-a1be-5702-9892-dcb141244c49",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--61aaf86e-1665-5ae9-b5ef-d8a773735a86",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--442de648-8dd3-59c8-a6ba-4ae6f831ead6",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--a9895e6e-971c-52f4-911a-bf207fd976cf",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2f02d839-8717-50ac-84a2-64a17199f705",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--ed6610d4-ac05-5f5b-b50f-e7110567c49b",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2895f9e1-de4f-5b4a-8008-c42f3996f936",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--439fca55-efd1-565a-889f-02867b93d62a",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--5f146960-5b84-5f91-a348-6a0ae5c477a2",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--2ae6ccc5-2e8c-573e-a6c6-cfda65eda426",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d68c5717-0251-5562-9b11-d0f42172a333",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--5d07a5fe-a046-566a-a711-21bbec5c32b9",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3c4761d2-10a7-52b0-a613-82dcc1b3e9b8",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--870525f4-5bce-5a5a-99d9-be54594e0f1b",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6a8832a1-2bd5-5757-8605-3da68b50937b",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--b07c38a5-2a1c-514c-bd07-390ab70230ab",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b72d4194-469b-56bd-b781-9247459568bb",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "target_ref": "user-account--5b35b8ab-7546-5a5f-89f1-21ecefc3170d",
+      "confidence": 60
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--8620d4a3-50e4-5d9e-aefe-7aabdab61694",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "email-addr--c5a6c970-25e2-5132-b45b-1ab4190608a2",
+      "target_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "confidence": 70
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--8df4cbb7-5330-5971-aea2-2134142a69f5",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "email-addr--1f3f5e84-f4a6-5c19-a2a8-52e88dd73c88",
+      "target_ref": "user-account--d7405427-e6ce-5988-8275-b0dffaa67fb0",
+      "confidence": 70
+    }
+  ]
+}

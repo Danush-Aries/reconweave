@@ -1,0 +1,12 @@
+# Runtime dependencies for reconweave (offline-first by default).
+networkx>=2.8
+rich>=13.0
+typer>=0.9
+fastapi>=0.100
+uvicorn>=0.23
+pillow>=9.0
+tomli>=2.0; python_version < "3.11"
+
+# Dev / test (optional): pip install -e ".[dev]"
+# pytest>=7.0
+# httpx>=0.24

@@ -1,0 +1,392 @@
+{
+  "seed": {
+    "value": "john.doe@example.com",
+    "type": "email"
+  },
+  "meta": {
+    "collectors_run": [
+      "breach",
+      "deliverability",
+      "gravatar",
+      "leaks",
+      "permutation"
+    ],
+    "duration_ms": 215,
+    "live": false,
+    "generator": "reconweave"
+  },
+  "stats": {
+    "nodes": 9,
+    "edges": 8,
+    "nodes_by_type": {
+      "email": 1,
+      "org": 5,
+      "username": 3
+    },
+    "edges_by_type": {
+      "appears_in_breach": 5,
+      "same_identity": 3
+    }
+  },
+  "risk": {
+    "score": 39,
+    "band": "low",
+    "factors": [
+      {
+        "name": "Credential breaches",
+        "points": 36.0,
+        "detail": "5 breach(es): Adobe, Canva, Collection#1, Twitter, Wattpad",
+        "weight": 9.0
+      },
+      {
+        "name": "Email exposure",
+        "points": 3.0,
+        "detail": "1 email address(es) in graph",
+        "weight": 3.0
+      }
+    ]
+  },
+  "correlations": [
+    {
+      "kind": "email->username",
+      "source_id": "email:john.doe@example.com",
+      "target_id": "username:john.doe",
+      "confidence": 1.0,
+      "rationale": "email local-part 'john.doe' matches username",
+      "evidence": {
+        "localpart": "john.doe"
+      }
+    },
+    {
+      "kind": "email->username",
+      "source_id": "email:john.doe@example.com",
+      "target_id": "username:johndoe",
+      "confidence": 1.0,
+      "rationale": "email local-part 'johndoe' matches username",
+      "evidence": {
+        "localpart": "johndoe"
+      }
+    },
+    {
+      "kind": "email->username",
+      "source_id": "email:john.doe@example.com",
+      "target_id": "username:john",
+      "confidence": 1.0,
+      "rationale": "email local-part 'john' matches username",
+      "evidence": {
+        "localpart": "john"
+      }
+    }
+  ],
+  "correlation_summary": {
+    "total": 3,
+    "by_kind": {
+      "email->username": 3
+    }
+  },
+  "nodes": [
+    {
+      "id": "email:john.doe@example.com",
+      "type": "email",
+      "value": "john.doe@example.com",
+      "attributes": {
+        "is_seed": true,
+        "seed_type": "email",
+        "breach_count": 5,
+        "mx_found": true,
+        "smtp_deliverable": true,
+        "disposable": false,
+        "role_account": false,
+        "mx_host": "mx1.example.com",
+        "gravatar_hash": "8eb1b522f60d11fa897de1dc6351b7e8",
+        "gravatar_url": "https://www.gravatar.com/avatar/8eb1b522f60d11fa897de1dc6351b7e8",
+        "gravatar_profile": false
+      },
+      "confidence": 1.0,
+      "sources": [
+        "breach",
+        "deliverability",
+        "gravatar",
+        "leaks",
+        "permutation",
+        "seed"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "org:breach:Wattpad",
+      "type": "org",
+      "value": "breach:Wattpad",
+      "attributes": {
+        "kind": "breach",
+        "name": "Wattpad",
+        "year": 2020,
+        "data_classes": [
+          "email",
+          "username",
+          "ip"
+        ],
+        "temporal_rank": "2020-01-01"
+      },
+      "confidence": 0.85,
+      "sources": [
+        "breach"
+      ],
+      "first_seen": "2020-01-01"
+    },
+    {
+      "id": "org:breach:Collection#1",
+      "type": "org",
+      "value": "breach:Collection#1",
+      "attributes": {
+        "kind": "breach",
+        "name": "Collection#1",
+        "year": 2019,
+        "data_classes": [
+          "email",
+          "password"
+        ],
+        "temporal_rank": "2019-01-01"
+      },
+      "confidence": 0.85,
+      "sources": [
+        "breach"
+      ],
+      "first_seen": "2019-01-01"
+    },
+    {
+      "id": "org:breach:Adobe",
+      "type": "org",
+      "value": "breach:Adobe",
+      "attributes": {
+        "kind": "breach",
+        "name": "Adobe",
+        "year": 2013,
+        "data_classes": [
+          "email",
+          "password",
+          "password_hint"
+        ]
+      },
+      "confidence": 0.85,
+      "sources": [
+        "breach"
+      ],
+      "first_seen": "2013-01-01"
+    },
+    {
+      "id": "org:breach:Canva",
+      "type": "org",
+      "value": "breach:Canva",
+      "attributes": {
+        "kind": "breach",
+        "name": "Canva",
+        "year": 2019,
+        "data_classes": [
+          "email",
+          "username",
+          "geo"
+        ],
+        "temporal_rank": "2019-01-01"
+      },
+      "confidence": 0.85,
+      "sources": [
+        "breach"
+      ],
+      "first_seen": "2019-01-01"
+    },
+    {
+      "id": "org:breach:Twitter",
+      "type": "org",
+      "value": "breach:Twitter",
+      "attributes": {
+        "kind": "breach",
+        "name": "Twitter",
+        "year": 2022,
+        "data_classes": [
+          "email",
+          "phone",
+          "username"
+        ],
+        "temporal_rank": "2022-01-01"
+      },
+      "confidence": 0.85,
+      "sources": [
+        "breach"
+      ],
+      "first_seen": "2022-01-01"
+    },
+    {
+      "id": "username:john",
+      "type": "username",
+      "value": "john",
+      "attributes": {
+        "derived_from": "john.doe@example.com"
+      },
+      "confidence": 0.4,
+      "sources": [
+        "permutation"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "username:john.doe",
+      "type": "username",
+      "value": "john.doe",
+      "attributes": {
+        "derived_from": "john.doe@example.com"
+      },
+      "confidence": 0.4,
+      "sources": [
+        "permutation"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "username:johndoe",
+      "type": "username",
+      "value": "johndoe",
+      "attributes": {
+        "derived_from": "john.doe@example.com"
+      },
+      "confidence": 0.4,
+      "sources": [
+        "permutation"
+      ],
+      "first_seen": ""
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "email:john.doe@example.com",
+      "target_id": "org:breach:Wattpad",
+      "type": "appears_in_breach",
+      "confidence": 0.85,
+      "attributes": {
+        "breach": "Wattpad",
+        "year": 2020,
+        "data_classes": [
+          "email",
+          "username",
+          "ip"
+        ]
+      },
+      "sources": [
+        "breach"
+      ]
+    },
+    {
+      "source_id": "email:john.doe@example.com",
+      "target_id": "org:breach:Collection#1",
+      "type": "appears_in_breach",
+      "confidence": 0.85,
+      "attributes": {
+        "breach": "Collection#1",
+        "year": 2019,
+        "data_classes": [
+          "email",
+          "password"
+        ]
+      },
+      "sources": [
+        "breach"
+      ]
+    },
+    {
+      "source_id": "email:john.doe@example.com",
+      "target_id": "org:breach:Adobe",
+      "type": "appears_in_breach",
+      "confidence": 0.85,
+      "attributes": {
+        "breach": "Adobe",
+        "year": 2013,
+        "data_classes": [
+          "email",
+          "password",
+          "password_hint"
+        ]
+      },
+      "sources": [
+        "breach"
+      ]
+    },
+    {
+      "source_id": "email:john.doe@example.com",
+      "target_id": "org:breach:Canva",
+      "type": "appears_in_breach",
+      "confidence": 0.85,
+      "attributes": {
+        "breach": "Canva",
+        "year": 2019,
+        "data_classes": [
+          "email",
+          "username",
+          "geo"
+        ]
+      },
+      "sources": [
+        "breach"
+      ]
+    },
+    {
+      "source_id": "email:john.doe@example.com",
+      "target_id": "org:breach:Twitter",
+      "type": "appears_in_breach",
+      "confidence": 0.85,
+      "attributes": {
+        "breach": "Twitter",
+        "year": 2022,
+        "data_classes": [
+          "email",
+          "phone",
+          "username"
+        ]
+      },
+      "sources": [
+        "breach"
+      ]
+    },
+    {
+      "source_id": "email:john.doe@example.com",
+      "target_id": "username:john",
+      "type": "same_identity",
+      "confidence": 1.0,
+      "attributes": {
+        "method": "email-localpart",
+        "localpart": "john"
+      },
+      "sources": [
+        "correlation",
+        "permutation"
+      ]
+    },
+    {
+      "source_id": "email:john.doe@example.com",
+      "target_id": "username:john.doe",
+      "type": "same_identity",
+      "confidence": 1.0,
+      "attributes": {
+        "method": "email-localpart",
+        "localpart": "john.doe"
+      },
+      "sources": [
+        "correlation",
+        "permutation"
+      ]
+    },
+    {
+      "source_id": "email:john.doe@example.com",
+      "target_id": "username:johndoe",
+      "type": "same_identity",
+      "confidence": 1.0,
+      "attributes": {
+        "method": "email-localpart",
+        "localpart": "johndoe"
+      },
+      "sources": [
+        "correlation",
+        "permutation"
+      ]
+    }
+  ]
+}

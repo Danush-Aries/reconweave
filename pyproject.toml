@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reconweave"
+version = "0.1.0"
+description = "reconweave - an OSINT correlation platform that fuses many sources into one entity graph, pivots across identities, scores exposure, and reports. Offline-first, zero API keys by default."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Dhanush Shankar", email = "danushankar3@gmail.com" }]
+keywords = [
+    "osint", "osint-framework", "threat-intelligence", "reconnaissance",
+    "entity-resolution", "stix", "security", "correlation",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Information Technology",
+    "Topic :: Security",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "networkx>=2.8",
+    "rich>=13.0",
+    "typer>=0.9",
+    "fastapi>=0.100",
+    "uvicorn>=0.23",
+    "pillow>=9.0",
+    "tomli>=2.0; python_version < '3.11'",
+]
+
+[project.optional-dependencies]
+stix = ["stix2>=3.0"]
+dev = ["pytest>=7.0", "httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://github.com/Danush-Aries/reconweave"
+Repository = "https://github.com/Danush-Aries/reconweave"
+
+[project.scripts]
+reconweave = "reconweave.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+reconweave = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

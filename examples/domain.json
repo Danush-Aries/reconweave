@@ -1,0 +1,536 @@
+{
+  "seed": {
+    "value": "example.com",
+    "type": "domain"
+  },
+  "meta": {
+    "collectors_run": [
+      "crtsh",
+      "dns",
+      "leaks",
+      "subdomain",
+      "webtech",
+      "whois"
+    ],
+    "duration_ms": 287,
+    "live": false,
+    "generator": "reconweave"
+  },
+  "stats": {
+    "nodes": 17,
+    "edges": 16,
+    "nodes_by_type": {
+      "domain": 1,
+      "subdomain": 11,
+      "ip": 2,
+      "org": 2,
+      "person": 1
+    },
+    "edges_by_type": {
+      "resolves_to": 2,
+      "appears_in_breach": 1,
+      "subdomain_of": 11,
+      "owns": 1,
+      "member_of": 1
+    }
+  },
+  "risk": {
+    "score": 19,
+    "band": "minimal",
+    "factors": [
+      {
+        "name": "Leak / paste mentions",
+        "points": 7.0,
+        "detail": "1 paste/combolist mention(s)",
+        "weight": 7.0
+      },
+      {
+        "name": "Attack surface (subdomains)",
+        "points": 12.0,
+        "detail": "11 subdomain(s) discovered",
+        "weight": 1.2
+      }
+    ]
+  },
+  "correlations": [],
+  "correlation_summary": {
+    "total": 0,
+    "by_kind": {}
+  },
+  "nodes": [
+    {
+      "id": "domain:example.com",
+      "type": "domain",
+      "value": "example.com",
+      "attributes": {
+        "is_seed": true,
+        "seed_type": "domain",
+        "nameservers": [
+          "ns2.example.com"
+        ],
+        "mx": [
+          "mx1.example.com"
+        ],
+        "technologies": [
+          {
+            "name": "jQuery",
+            "category": "javascript-library"
+          },
+          {
+            "name": "WordPress",
+            "category": "cms"
+          },
+          {
+            "name": "Cloudflare",
+            "category": "cdn"
+          },
+          {
+            "name": "Google Analytics",
+            "category": "analytics"
+          },
+          {
+            "name": "React",
+            "category": "javascript-framework"
+          },
+          {
+            "name": "PHP",
+            "category": "language"
+          }
+        ],
+        "server": "unknown",
+        "registrar": "Gandi SAS",
+        "created": "2018-09-06",
+        "expires": "2026-02-04"
+      },
+      "confidence": 1.0,
+      "sources": [
+        "crtsh",
+        "dns",
+        "leaks",
+        "seed",
+        "subdomain",
+        "webtech",
+        "whois"
+      ],
+      "first_seen": "2018-09-06"
+    },
+    {
+      "id": "subdomain:ftp.example.com",
+      "type": "subdomain",
+      "value": "ftp.example.com",
+      "attributes": {
+        "issuer": "Let's Encrypt",
+        "not_before": "2024-06-14",
+        "temporal_rank": "2024-06-14"
+      },
+      "confidence": 0.75,
+      "sources": [
+        "crtsh"
+      ],
+      "first_seen": "2024-06-14"
+    },
+    {
+      "id": "subdomain:mail.example.com",
+      "type": "subdomain",
+      "value": "mail.example.com",
+      "attributes": {
+        "issuer": "Let's Encrypt",
+        "not_before": "2023-06-23",
+        "label": "mail",
+        "temporal_rank": "2023-06-23"
+      },
+      "confidence": 0.75,
+      "sources": [
+        "crtsh",
+        "subdomain"
+      ],
+      "first_seen": "2023-06-23"
+    },
+    {
+      "id": "subdomain:docs.example.com",
+      "type": "subdomain",
+      "value": "docs.example.com",
+      "attributes": {
+        "issuer": "Let's Encrypt",
+        "not_before": "2023-05-03",
+        "label": "docs",
+        "temporal_rank": "2023-05-03"
+      },
+      "confidence": 0.75,
+      "sources": [
+        "crtsh",
+        "subdomain"
+      ],
+      "first_seen": "2023-05-03"
+    },
+    {
+      "id": "subdomain:static.example.com",
+      "type": "subdomain",
+      "value": "static.example.com",
+      "attributes": {
+        "issuer": "Let's Encrypt",
+        "not_before": "2024-07-20",
+        "label": "static",
+        "temporal_rank": "2024-07-20"
+      },
+      "confidence": 0.75,
+      "sources": [
+        "crtsh",
+        "subdomain"
+      ],
+      "first_seen": "2024-07-20"
+    },
+    {
+      "id": "subdomain:internal.example.com",
+      "type": "subdomain",
+      "value": "internal.example.com",
+      "attributes": {
+        "issuer": "Let's Encrypt",
+        "not_before": "2024-02-09",
+        "temporal_rank": "2024-02-09"
+      },
+      "confidence": 0.75,
+      "sources": [
+        "crtsh"
+      ],
+      "first_seen": "2024-02-09"
+    },
+    {
+      "id": "subdomain:portal.example.com",
+      "type": "subdomain",
+      "value": "portal.example.com",
+      "attributes": {
+        "issuer": "Let's Encrypt",
+        "not_before": "2021-06-10",
+        "temporal_rank": "2021-06-10"
+      },
+      "confidence": 0.75,
+      "sources": [
+        "crtsh"
+      ],
+      "first_seen": "2021-06-10"
+    },
+    {
+      "id": "ip:143.179.172.176",
+      "type": "ip",
+      "value": "143.179.172.176",
+      "attributes": {
+        "record": "A"
+      },
+      "confidence": 0.85,
+      "sources": [
+        "dns"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "ip:97.204.108.190",
+      "type": "ip",
+      "value": "97.204.108.190",
+      "attributes": {
+        "record": "A"
+      },
+      "confidence": 0.85,
+      "sources": [
+        "dns"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "org:leak:throwbin/dcc4ebe1",
+      "type": "org",
+      "value": "leak:throwbin/dcc4ebe1",
+      "attributes": {
+        "kind": "leak",
+        "site": "throwbin",
+        "leak_type": "paste",
+        "date": "2024-10-28",
+        "ref": "dcc4ebe1",
+        "temporal_rank": "2024-10-28"
+      },
+      "confidence": 0.5,
+      "sources": [
+        "leaks"
+      ],
+      "first_seen": "2024-10-28"
+    },
+    {
+      "id": "subdomain:auth.example.com",
+      "type": "subdomain",
+      "value": "auth.example.com",
+      "attributes": {
+        "label": "auth"
+      },
+      "confidence": 0.7,
+      "sources": [
+        "subdomain"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "subdomain:www.example.com",
+      "type": "subdomain",
+      "value": "www.example.com",
+      "attributes": {
+        "label": "www"
+      },
+      "confidence": 0.621,
+      "sources": [
+        "subdomain"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "subdomain:staging.example.com",
+      "type": "subdomain",
+      "value": "staging.example.com",
+      "attributes": {
+        "label": "staging"
+      },
+      "confidence": 0.593,
+      "sources": [
+        "subdomain"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "subdomain:beta.example.com",
+      "type": "subdomain",
+      "value": "beta.example.com",
+      "attributes": {
+        "label": "beta"
+      },
+      "confidence": 0.728,
+      "sources": [
+        "subdomain"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "subdomain:admin.example.com",
+      "type": "subdomain",
+      "value": "admin.example.com",
+      "attributes": {
+        "label": "admin"
+      },
+      "confidence": 0.642,
+      "sources": [
+        "subdomain"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "org:Example Systems",
+      "type": "org",
+      "value": "Example Systems",
+      "attributes": {
+        "registrar": "Gandi SAS",
+        "role": "registrant",
+        "temporal_rank": "2018-09-06"
+      },
+      "confidence": 0.8,
+      "sources": [
+        "whois"
+      ],
+      "first_seen": "2018-09-06"
+    },
+    {
+      "id": "person:Alex Nguyen",
+      "type": "person",
+      "value": "Alex Nguyen",
+      "attributes": {
+        "role": "admin-contact"
+      },
+      "confidence": 0.55,
+      "sources": [
+        "whois"
+      ],
+      "first_seen": ""
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "domain:example.com",
+      "target_id": "ip:143.179.172.176",
+      "type": "resolves_to",
+      "confidence": 0.85,
+      "attributes": {
+        "record": "A"
+      },
+      "sources": [
+        "dns"
+      ]
+    },
+    {
+      "source_id": "domain:example.com",
+      "target_id": "ip:97.204.108.190",
+      "type": "resolves_to",
+      "confidence": 0.85,
+      "attributes": {
+        "record": "A"
+      },
+      "sources": [
+        "dns"
+      ]
+    },
+    {
+      "source_id": "domain:example.com",
+      "target_id": "org:leak:throwbin/dcc4ebe1",
+      "type": "appears_in_breach",
+      "confidence": 0.5,
+      "attributes": {
+        "site": "throwbin",
+        "leak_type": "paste",
+        "date": "2024-10-28"
+      },
+      "sources": [
+        "leaks"
+      ]
+    },
+    {
+      "source_id": "subdomain:ftp.example.com",
+      "target_id": "domain:example.com",
+      "type": "subdomain_of",
+      "confidence": 0.75,
+      "attributes": {
+        "evidence": "certificate-transparency"
+      },
+      "sources": [
+        "crtsh"
+      ]
+    },
+    {
+      "source_id": "subdomain:mail.example.com",
+      "target_id": "domain:example.com",
+      "type": "subdomain_of",
+      "confidence": 0.75,
+      "attributes": {
+        "evidence": "certificate-transparency"
+      },
+      "sources": [
+        "crtsh",
+        "subdomain"
+      ]
+    },
+    {
+      "source_id": "subdomain:docs.example.com",
+      "target_id": "domain:example.com",
+      "type": "subdomain_of",
+      "confidence": 0.75,
+      "attributes": {
+        "evidence": "certificate-transparency"
+      },
+      "sources": [
+        "crtsh",
+        "subdomain"
+      ]
+    },
+    {
+      "source_id": "subdomain:static.example.com",
+      "target_id": "domain:example.com",
+      "type": "subdomain_of",
+      "confidence": 0.75,
+      "attributes": {
+        "evidence": "certificate-transparency"
+      },
+      "sources": [
+        "crtsh",
+        "subdomain"
+      ]
+    },
+    {
+      "source_id": "subdomain:internal.example.com",
+      "target_id": "domain:example.com",
+      "type": "subdomain_of",
+      "confidence": 0.75,
+      "attributes": {
+        "evidence": "certificate-transparency"
+      },
+      "sources": [
+        "crtsh"
+      ]
+    },
+    {
+      "source_id": "subdomain:portal.example.com",
+      "target_id": "domain:example.com",
+      "type": "subdomain_of",
+      "confidence": 0.75,
+      "attributes": {
+        "evidence": "certificate-transparency"
+      },
+      "sources": [
+        "crtsh"
+      ]
+    },
+    {
+      "source_id": "subdomain:auth.example.com",
+      "target_id": "domain:example.com",
+      "type": "subdomain_of",
+      "confidence": 0.65,
+      "attributes": {},
+      "sources": [
+        "subdomain"
+      ]
+    },
+    {
+      "source_id": "subdomain:www.example.com",
+      "target_id": "domain:example.com",
+      "type": "subdomain_of",
+      "confidence": 0.65,
+      "attributes": {},
+      "sources": [
+        "subdomain"
+      ]
+    },
+    {
+      "source_id": "subdomain:staging.example.com",
+      "target_id": "domain:example.com",
+      "type": "subdomain_of",
+      "confidence": 0.65,
+      "attributes": {},
+      "sources": [
+        "subdomain"
+      ]
+    },
+    {
+      "source_id": "subdomain:beta.example.com",
+      "target_id": "domain:example.com",
+      "type": "subdomain_of",
+      "confidence": 0.65,
+      "attributes": {},
+      "sources": [
+        "subdomain"
+      ]
+    },
+    {
+      "source_id": "subdomain:admin.example.com",
+      "target_id": "domain:example.com",
+      "type": "subdomain_of",
+      "confidence": 0.65,
+      "attributes": {},
+      "sources": [
+        "subdomain"
+      ]
+    },
+    {
+      "source_id": "org:Example Systems",
+      "target_id": "domain:example.com",
+      "type": "owns",
+      "confidence": 0.8,
+      "attributes": {},
+      "sources": [
+        "whois"
+      ]
+    },
+    {
+      "source_id": "person:Alex Nguyen",
+      "target_id": "org:Example Systems",
+      "type": "member_of",
+      "confidence": 0.5,
+      "attributes": {},
+      "sources": [
+        "whois"
+      ]
+    }
+  ]
+}

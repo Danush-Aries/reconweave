@@ -1,0 +1,853 @@
+{
+  "seed": {
+    "value": "someuser",
+    "type": "username"
+  },
+  "meta": {
+    "collectors_run": [
+      "leaks",
+      "permutation",
+      "username_enum"
+    ],
+    "duration_ms": 120,
+    "live": false,
+    "generator": "reconweave"
+  },
+  "stats": {
+    "nodes": 21,
+    "edges": 20,
+    "nodes_by_type": {
+      "username": 1,
+      "org": 1,
+      "email": 2,
+      "social_profile": 17
+    },
+    "edges_by_type": {
+      "appears_in_breach": 1,
+      "same_identity": 19
+    }
+  },
+  "risk": {
+    "score": 25,
+    "band": "low",
+    "factors": [
+      {
+        "name": "Leak / paste mentions",
+        "points": 7.0,
+        "detail": "1 paste/combolist mention(s)",
+        "weight": 7.0
+      },
+      {
+        "name": "Social / identity footprint",
+        "points": 12.0,
+        "detail": "17 linked profile(s)/artifact(s)",
+        "weight": 0.8
+      },
+      {
+        "name": "Email exposure",
+        "points": 6.0,
+        "detail": "2 email address(es) in graph",
+        "weight": 3.0
+      }
+    ]
+  },
+  "correlations": [
+    {
+      "kind": "email->username",
+      "source_id": "email:someuser@gmail.com",
+      "target_id": "username:someuser",
+      "confidence": 0.7,
+      "rationale": "email local-part 'someuser' matches username",
+      "evidence": {
+        "localpart": "someuser"
+      }
+    },
+    {
+      "kind": "email->username",
+      "source_id": "email:someuser@outlook.com",
+      "target_id": "username:someuser",
+      "confidence": 0.7,
+      "rationale": "email local-part 'someuser' matches username",
+      "evidence": {
+        "localpart": "someuser"
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:mastodon:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:instagram:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:tiktok:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:reddit:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:hackernews:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:behance:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:dribbble:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:deviantart:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:substack:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:wordpress:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:youtube:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:vimeo:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:soundcloud:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:bandcamp:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:keybase:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:venmo:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    },
+    {
+      "kind": "username->platform",
+      "source_id": "username:someuser",
+      "target_id": "social_profile:gravatar:someuser",
+      "confidence": 0.984,
+      "rationale": "username reused across 17 platforms",
+      "evidence": {
+        "platform_count": 17
+      }
+    }
+  ],
+  "correlation_summary": {
+    "total": 19,
+    "by_kind": {
+      "email->username": 2,
+      "username->platform": 17
+    }
+  },
+  "nodes": [
+    {
+      "id": "username:someuser",
+      "type": "username",
+      "value": "someuser",
+      "attributes": {
+        "is_seed": true,
+        "seed_type": "username",
+        "platforms_found": 17,
+        "platforms_checked": 47
+      },
+      "confidence": 1.0,
+      "sources": [
+        "leaks",
+        "seed",
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "org:leak:combolist-forum/1395e2a9",
+      "type": "org",
+      "value": "leak:combolist-forum/1395e2a9",
+      "attributes": {
+        "kind": "leak",
+        "site": "combolist-forum",
+        "leak_type": "paste",
+        "date": "2020-08-08",
+        "ref": "1395e2a9"
+      },
+      "confidence": 0.5,
+      "sources": [
+        "leaks"
+      ],
+      "first_seen": "2020-08-08"
+    },
+    {
+      "id": "email:someuser@gmail.com",
+      "type": "email",
+      "value": "someuser@gmail.com",
+      "attributes": {
+        "derived_from": "someuser",
+        "speculative": true
+      },
+      "confidence": 0.4,
+      "sources": [
+        "permutation"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "email:someuser@outlook.com",
+      "type": "email",
+      "value": "someuser@outlook.com",
+      "attributes": {
+        "derived_from": "someuser",
+        "speculative": true
+      },
+      "confidence": 0.4,
+      "sources": [
+        "permutation"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:mastodon:someuser",
+      "type": "social_profile",
+      "value": "mastodon:someuser",
+      "attributes": {
+        "platform": "Mastodon",
+        "category": "social",
+        "url": "https://mastodon.social/@someuser",
+        "username": "someuser"
+      },
+      "confidence": 0.584,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:instagram:someuser",
+      "type": "social_profile",
+      "value": "instagram:someuser",
+      "attributes": {
+        "platform": "Instagram",
+        "category": "social",
+        "url": "https://instagram.com/someuser",
+        "username": "someuser"
+      },
+      "confidence": 0.466,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:tiktok:someuser",
+      "type": "social_profile",
+      "value": "tiktok:someuser",
+      "attributes": {
+        "platform": "TikTok",
+        "category": "social",
+        "url": "https://tiktok.com/@someuser",
+        "username": "someuser"
+      },
+      "confidence": 0.689,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:reddit:someuser",
+      "type": "social_profile",
+      "value": "reddit:someuser",
+      "attributes": {
+        "platform": "Reddit",
+        "category": "forum",
+        "url": "https://reddit.com/user/someuser",
+        "username": "someuser"
+      },
+      "confidence": 0.532,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:hackernews:someuser",
+      "type": "social_profile",
+      "value": "hackernews:someuser",
+      "attributes": {
+        "platform": "HackerNews",
+        "category": "forum",
+        "url": "https://news.ycombinator.com/user?id=someuser",
+        "username": "someuser"
+      },
+      "confidence": 0.528,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:behance:someuser",
+      "type": "social_profile",
+      "value": "behance:someuser",
+      "attributes": {
+        "platform": "Behance",
+        "category": "creative",
+        "url": "https://behance.net/someuser",
+        "username": "someuser"
+      },
+      "confidence": 0.476,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:dribbble:someuser",
+      "type": "social_profile",
+      "value": "dribbble:someuser",
+      "attributes": {
+        "platform": "Dribbble",
+        "category": "creative",
+        "url": "https://dribbble.com/someuser",
+        "username": "someuser"
+      },
+      "confidence": 0.456,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:deviantart:someuser",
+      "type": "social_profile",
+      "value": "deviantart:someuser",
+      "attributes": {
+        "platform": "DeviantArt",
+        "category": "creative",
+        "url": "https://someuser.deviantart.com",
+        "username": "someuser"
+      },
+      "confidence": 0.588,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:substack:someuser",
+      "type": "social_profile",
+      "value": "substack:someuser",
+      "attributes": {
+        "platform": "Substack",
+        "category": "blog",
+        "url": "https://someuser.substack.com",
+        "username": "someuser"
+      },
+      "confidence": 0.717,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:wordpress:someuser",
+      "type": "social_profile",
+      "value": "wordpress:someuser",
+      "attributes": {
+        "platform": "WordPress",
+        "category": "blog",
+        "url": "https://someuser.wordpress.com",
+        "username": "someuser"
+      },
+      "confidence": 0.537,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:youtube:someuser",
+      "type": "social_profile",
+      "value": "youtube:someuser",
+      "attributes": {
+        "platform": "YouTube",
+        "category": "media",
+        "url": "https://youtube.com/@someuser",
+        "username": "someuser"
+      },
+      "confidence": 0.579,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:vimeo:someuser",
+      "type": "social_profile",
+      "value": "vimeo:someuser",
+      "attributes": {
+        "platform": "Vimeo",
+        "category": "media",
+        "url": "https://vimeo.com/someuser",
+        "username": "someuser"
+      },
+      "confidence": 0.741,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:soundcloud:someuser",
+      "type": "social_profile",
+      "value": "soundcloud:someuser",
+      "attributes": {
+        "platform": "SoundCloud",
+        "category": "media",
+        "url": "https://soundcloud.com/someuser",
+        "username": "someuser"
+      },
+      "confidence": 0.611,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:bandcamp:someuser",
+      "type": "social_profile",
+      "value": "bandcamp:someuser",
+      "attributes": {
+        "platform": "Bandcamp",
+        "category": "media",
+        "url": "https://bandcamp.com/someuser",
+        "username": "someuser"
+      },
+      "confidence": 0.681,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:keybase:someuser",
+      "type": "social_profile",
+      "value": "keybase:someuser",
+      "attributes": {
+        "platform": "Keybase",
+        "category": "security",
+        "url": "https://keybase.io/someuser",
+        "username": "someuser"
+      },
+      "confidence": 0.742,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:venmo:someuser",
+      "type": "social_profile",
+      "value": "venmo:someuser",
+      "attributes": {
+        "platform": "Venmo",
+        "category": "finance",
+        "url": "https://venmo.com/someuser",
+        "username": "someuser"
+      },
+      "confidence": 0.67,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    },
+    {
+      "id": "social_profile:gravatar:someuser",
+      "type": "social_profile",
+      "value": "gravatar:someuser",
+      "attributes": {
+        "platform": "Gravatar",
+        "category": "profile",
+        "url": "https://gravatar.com/someuser",
+        "username": "someuser"
+      },
+      "confidence": 0.663,
+      "sources": [
+        "username_enum"
+      ],
+      "first_seen": ""
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "username:someuser",
+      "target_id": "org:leak:combolist-forum/1395e2a9",
+      "type": "appears_in_breach",
+      "confidence": 0.5,
+      "attributes": {
+        "site": "combolist-forum",
+        "leak_type": "paste",
+        "date": "2020-08-08"
+      },
+      "sources": [
+        "leaks"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:mastodon:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "Mastodon",
+        "url": "https://mastodon.social/@someuser"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:instagram:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "Instagram",
+        "url": "https://instagram.com/someuser"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:tiktok:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "TikTok",
+        "url": "https://tiktok.com/@someuser"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:reddit:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "Reddit",
+        "url": "https://reddit.com/user/someuser"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:hackernews:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "HackerNews",
+        "url": "https://news.ycombinator.com/user?id=someuser"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:behance:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "Behance",
+        "url": "https://behance.net/someuser"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:dribbble:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "Dribbble",
+        "url": "https://dribbble.com/someuser"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:deviantart:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "DeviantArt",
+        "url": "https://someuser.deviantart.com"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:substack:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "Substack",
+        "url": "https://someuser.substack.com"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:wordpress:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "WordPress",
+        "url": "https://someuser.wordpress.com"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:youtube:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "YouTube",
+        "url": "https://youtube.com/@someuser"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:vimeo:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "Vimeo",
+        "url": "https://vimeo.com/someuser"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:soundcloud:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "SoundCloud",
+        "url": "https://soundcloud.com/someuser"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:bandcamp:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "Bandcamp",
+        "url": "https://bandcamp.com/someuser"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:keybase:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "Keybase",
+        "url": "https://keybase.io/someuser"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:venmo:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "Venmo",
+        "url": "https://venmo.com/someuser"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "username:someuser",
+      "target_id": "social_profile:gravatar:someuser",
+      "type": "same_identity",
+      "confidence": 0.6,
+      "attributes": {
+        "platform": "Gravatar",
+        "url": "https://gravatar.com/someuser"
+      },
+      "sources": [
+        "username_enum"
+      ]
+    },
+    {
+      "source_id": "email:someuser@gmail.com",
+      "target_id": "username:someuser",
+      "type": "same_identity",
+      "confidence": 0.7,
+      "attributes": {
+        "method": "email-localpart",
+        "localpart": "someuser"
+      },
+      "sources": [
+        "correlation"
+      ]
+    },
+    {
+      "source_id": "email:someuser@outlook.com",
+      "target_id": "username:someuser",
+      "type": "same_identity",
+      "confidence": 0.7,
+      "attributes": {
+        "method": "email-localpart",
+        "localpart": "someuser"
+      },
+      "sources": [
+        "correlation"
+      ]
+    }
+  ]
+}

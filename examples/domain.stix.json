@@ -1,0 +1,367 @@
+{
+  "type": "bundle",
+  "id": "bundle--16f41b1b-b44b-546b-85fc-fd677c7bc40d",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--77e49a6c-4ffb-59a5-8c03-e842c2ae25bc",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "name": "reconweave",
+      "identity_class": "system"
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "value": "example.com",
+      "x_reconweave_sources": [
+        "crtsh",
+        "dns",
+        "leaks",
+        "seed",
+        "subdomain",
+        "webtech",
+        "whois"
+      ],
+      "x_reconweave_confidence": 1.0
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--84044455-9daf-5251-93e4-362e1e7249d3",
+      "value": "ftp.example.com",
+      "x_reconweave_sources": [
+        "crtsh"
+      ],
+      "x_reconweave_confidence": 0.75
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--036101a1-bd49-5af5-9b4d-1b83b6c1c00c",
+      "value": "mail.example.com",
+      "x_reconweave_sources": [
+        "crtsh",
+        "subdomain"
+      ],
+      "x_reconweave_confidence": 0.75
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--33d5628f-2f20-58ba-a3ce-598867fa555c",
+      "value": "docs.example.com",
+      "x_reconweave_sources": [
+        "crtsh",
+        "subdomain"
+      ],
+      "x_reconweave_confidence": 0.75
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--71d8d73d-c55f-51ba-bf28-7e792e88319e",
+      "value": "static.example.com",
+      "x_reconweave_sources": [
+        "crtsh",
+        "subdomain"
+      ],
+      "x_reconweave_confidence": 0.75
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--164eb954-3765-55f9-9ba3-a4ac557a75bf",
+      "value": "internal.example.com",
+      "x_reconweave_sources": [
+        "crtsh"
+      ],
+      "x_reconweave_confidence": 0.75
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--07f2512f-65d1-5cea-a224-9094b16dea2b",
+      "value": "portal.example.com",
+      "x_reconweave_sources": [
+        "crtsh"
+      ],
+      "x_reconweave_confidence": 0.75
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--9db30d62-f5da-5dfa-8c18-40806cdca129",
+      "value": "143.179.172.176",
+      "x_reconweave_sources": [
+        "dns"
+      ],
+      "x_reconweave_confidence": 0.85
+    },
+    {
+      "type": "ipv4-addr",
+      "spec_version": "2.1",
+      "id": "ipv4-addr--d3967c82-098d-56e5-975e-679595d35137",
+      "value": "97.204.108.190",
+      "x_reconweave_sources": [
+        "dns"
+      ],
+      "x_reconweave_confidence": 0.85
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--e68c9ecf-5841-5bd5-9976-d05d8d196398",
+      "name": "leak:throwbin/dcc4ebe1",
+      "identity_class": "organization",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--5ad99e14-cf3a-5b7e-b4ef-f422de11a82e",
+      "value": "auth.example.com",
+      "x_reconweave_sources": [
+        "subdomain"
+      ],
+      "x_reconweave_confidence": 0.7
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--c4b54d0b-18ca-5d4b-a8dc-1078bd1e8678",
+      "value": "www.example.com",
+      "x_reconweave_sources": [
+        "subdomain"
+      ],
+      "x_reconweave_confidence": 0.621
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--dfd1e4b1-5d80-5ff5-8dbc-4869e0fc5f5d",
+      "value": "staging.example.com",
+      "x_reconweave_sources": [
+        "subdomain"
+      ],
+      "x_reconweave_confidence": 0.593
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--d9a7e6cb-5763-5d57-b340-b36590e7033d",
+      "value": "beta.example.com",
+      "x_reconweave_sources": [
+        "subdomain"
+      ],
+      "x_reconweave_confidence": 0.728
+    },
+    {
+      "type": "domain-name",
+      "spec_version": "2.1",
+      "id": "domain-name--a8906804-25d2-5ce7-a6c0-75a8d8ccba82",
+      "value": "admin.example.com",
+      "x_reconweave_sources": [
+        "subdomain"
+      ],
+      "x_reconweave_confidence": 0.642
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--07f7a64c-b89d-5577-b515-75493965f3d9",
+      "name": "Example Systems",
+      "identity_class": "organization",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--05ec67ba-f58b-543e-8bf8-13d4c047ba8a",
+      "name": "Alex Nguyen",
+      "identity_class": "individual",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--967ed35e-71af-5b0e-a783-c5ea179f8fe9",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "resolves-to",
+      "source_ref": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "target_ref": "ipv4-addr--9db30d62-f5da-5dfa-8c18-40806cdca129",
+      "confidence": 85
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--52a4e78b-a09b-50f0-a8af-482acece6994",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "resolves-to",
+      "source_ref": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "target_ref": "ipv4-addr--d3967c82-098d-56e5-975e-679595d35137",
+      "confidence": 85
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--3de31533-9ed2-54e7-852b-540afeaf11eb",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "related-to",
+      "source_ref": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "target_ref": "identity--e68c9ecf-5841-5bd5-9976-d05d8d196398",
+      "confidence": 50
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--ac263f1f-43e9-58a8-81b6-53b8db76808d",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "belongs-to",
+      "source_ref": "domain-name--84044455-9daf-5251-93e4-362e1e7249d3",
+      "target_ref": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "confidence": 75
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--80ef9e79-710e-5734-9924-1e3f7127113f",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "belongs-to",
+      "source_ref": "domain-name--036101a1-bd49-5af5-9b4d-1b83b6c1c00c",
+      "target_ref": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "confidence": 75
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--351f6d99-4871-5e56-8773-26bfdd8d19e3",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "belongs-to",
+      "source_ref": "domain-name--33d5628f-2f20-58ba-a3ce-598867fa555c",
+      "target_ref": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "confidence": 75
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d7c6e435-ef1f-50fe-b663-15e71a8f005b",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "belongs-to",
+      "source_ref": "domain-name--71d8d73d-c55f-51ba-bf28-7e792e88319e",
+      "target_ref": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "confidence": 75
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f46a3e51-fa46-513d-b06a-6d0590cc68b1",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "belongs-to",
+      "source_ref": "domain-name--164eb954-3765-55f9-9ba3-a4ac557a75bf",
+      "target_ref": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "confidence": 75
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--1b779856-3376-555d-a042-f0fe884d7156",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "belongs-to",
+      "source_ref": "domain-name--07f2512f-65d1-5cea-a224-9094b16dea2b",
+      "target_ref": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "confidence": 75
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--649d0c11-1853-5a81-b428-4f12ed0f8726",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "belongs-to",
+      "source_ref": "domain-name--5ad99e14-cf3a-5b7e-b4ef-f422de11a82e",
+      "target_ref": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "confidence": 65
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--81464102-ede7-5b4e-ae38-d5efe44be4ce",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "belongs-to",
+      "source_ref": "domain-name--c4b54d0b-18ca-5d4b-a8dc-1078bd1e8678",
+      "target_ref": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "confidence": 65
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d0b227c4-df45-5e0c-9352-6efe5852ff49",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "belongs-to",
+      "source_ref": "domain-name--dfd1e4b1-5d80-5ff5-8dbc-4869e0fc5f5d",
+      "target_ref": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "confidence": 65
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4bb2255e-8366-5e75-b4d0-b20fbb2beb41",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "belongs-to",
+      "source_ref": "domain-name--d9a7e6cb-5763-5d57-b340-b36590e7033d",
+      "target_ref": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "confidence": 65
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--8c8833a5-df03-510b-9b39-9c054abe8cb6",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "belongs-to",
+      "source_ref": "domain-name--a8906804-25d2-5ce7-a6c0-75a8d8ccba82",
+      "target_ref": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "confidence": 65
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--127093d4-9393-52c5-a9fe-ce11873f2ba7",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "owns",
+      "source_ref": "identity--07f7a64c-b89d-5577-b515-75493965f3d9",
+      "target_ref": "domain-name--247454fc-0dc9-5f3a-a9ce-839db5ef3198",
+      "confidence": 80
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--6c1b54a8-d35f-5009-90ec-adf20e754129",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "member-of",
+      "source_ref": "identity--05ec67ba-f58b-543e-8bf8-13d4c047ba8a",
+      "target_ref": "identity--07f7a64c-b89d-5577-b515-75493965f3d9",
+      "confidence": 50
+    }
+  ]
+}

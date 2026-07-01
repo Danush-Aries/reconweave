@@ -1,0 +1,193 @@
+{
+  "type": "bundle",
+  "id": "bundle--2fd7b2be-36b0-5636-808e-40bd7631bbaa",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--77e49a6c-4ffb-59a5-8c03-e842c2ae25bc",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "name": "reconweave",
+      "identity_class": "system"
+    },
+    {
+      "type": "email-addr",
+      "spec_version": "2.1",
+      "id": "email-addr--96c35d47-ef63-515a-8191-4b4b6e7ce51a",
+      "value": "john.doe@example.com",
+      "x_reconweave_sources": [
+        "breach",
+        "deliverability",
+        "gravatar",
+        "leaks",
+        "permutation",
+        "seed"
+      ],
+      "x_reconweave_confidence": 1.0
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--29a5cdd3-2c0b-585f-a56a-8c445d80afec",
+      "name": "breach:Wattpad",
+      "identity_class": "organization",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--f404896b-e318-5694-8771-cb3e8913e290",
+      "name": "breach:Collection#1",
+      "identity_class": "organization",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--54a4596e-2672-5d5a-a00f-b6c31433c32e",
+      "name": "breach:Adobe",
+      "identity_class": "organization",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--12f94626-cb71-5c3b-a65c-a8f00b3bbe26",
+      "name": "breach:Canva",
+      "identity_class": "organization",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--b438eb25-03f3-53de-991f-dd24a6487eed",
+      "name": "breach:Twitter",
+      "identity_class": "organization",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--aafdf256-f42e-5bde-81f6-186d0fa222f1",
+      "account_login": "john",
+      "x_reconweave_sources": [
+        "permutation"
+      ],
+      "x_reconweave_confidence": 0.4
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--cf0256b9-c021-5bb7-ac84-3ff55485164b",
+      "account_login": "john.doe",
+      "x_reconweave_sources": [
+        "permutation"
+      ],
+      "x_reconweave_confidence": 0.4
+    },
+    {
+      "type": "user-account",
+      "spec_version": "2.1",
+      "id": "user-account--db6e0396-293d-5255-9eb2-284cf9836991",
+      "account_login": "johndoe",
+      "x_reconweave_sources": [
+        "permutation"
+      ],
+      "x_reconweave_confidence": 0.4
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--41479296-06a9-5c36-8f36-b65d45b908f1",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "related-to",
+      "source_ref": "email-addr--96c35d47-ef63-515a-8191-4b4b6e7ce51a",
+      "target_ref": "identity--29a5cdd3-2c0b-585f-a56a-8c445d80afec",
+      "confidence": 85
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--94126d0e-ed07-5d3c-a10e-8a94fa865e0f",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "related-to",
+      "source_ref": "email-addr--96c35d47-ef63-515a-8191-4b4b6e7ce51a",
+      "target_ref": "identity--f404896b-e318-5694-8771-cb3e8913e290",
+      "confidence": 85
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--f87399cc-0d52-575e-a30d-7cb21bd9ccbc",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "related-to",
+      "source_ref": "email-addr--96c35d47-ef63-515a-8191-4b4b6e7ce51a",
+      "target_ref": "identity--54a4596e-2672-5d5a-a00f-b6c31433c32e",
+      "confidence": 85
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a516855a-b407-5e41-80cf-1a965672b398",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "related-to",
+      "source_ref": "email-addr--96c35d47-ef63-515a-8191-4b4b6e7ce51a",
+      "target_ref": "identity--12f94626-cb71-5c3b-a65c-a8f00b3bbe26",
+      "confidence": 85
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b9f6149c-e438-5163-9d30-bfa7d383a9cb",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "related-to",
+      "source_ref": "email-addr--96c35d47-ef63-515a-8191-4b4b6e7ce51a",
+      "target_ref": "identity--b438eb25-03f3-53de-991f-dd24a6487eed",
+      "confidence": 85
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b57bd694-4c9c-5e9d-8bd7-5e701e8176c3",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "email-addr--96c35d47-ef63-515a-8191-4b4b6e7ce51a",
+      "target_ref": "user-account--aafdf256-f42e-5bde-81f6-186d0fa222f1",
+      "confidence": 100
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--b17fa4ff-242a-5c6b-a487-0e9672d995b4",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "email-addr--96c35d47-ef63-515a-8191-4b4b6e7ce51a",
+      "target_ref": "user-account--cf0256b9-c021-5bb7-ac84-3ff55485164b",
+      "confidence": 100
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--a64738ee-b114-529f-b56f-6dccbfdda195",
+      "created": "2026-01-01T00:00:00.000Z",
+      "modified": "2026-01-01T00:00:00.000Z",
+      "relationship_type": "duplicate-of",
+      "source_ref": "email-addr--96c35d47-ef63-515a-8191-4b4b6e7ce51a",
+      "target_ref": "user-account--db6e0396-293d-5255-9eb2-284cf9836991",
+      "confidence": 100
+    }
+  ]
+}

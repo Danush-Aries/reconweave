@@ -1,0 +1,23 @@
+# reconweave configuration (all values optional; offline-first defaults shown).
+
+[reconweave]
+# Enable real network collectors. Default false => deterministic synthetic data.
+live = false
+
+# SQLite cache for collector payloads (repeat scans become instant).
+cache_path = ".reconweave-cache.db"
+
+# Token-bucket rate limit and bounded concurrency for the async orchestrator.
+rate_limit_per_sec = 20.0
+max_concurrency = 8
+
+# Output locations.
+output_dir = "out"
+watch_db = "reconweave-watch.db"
+
+[collectors]
+# Whitelist specific collectors (empty => all enabled).
+enabled = []
+# Blacklist collectors by name, e.g. disable media collectors:
+# disabled = ["exif", "reverse_image"]
+disabled = []
